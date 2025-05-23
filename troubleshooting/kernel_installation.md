@@ -27,9 +27,11 @@ sudo apt install dracut-core
 dracut --force --kver 5.19.17 --no-hostonly --omit network
 ```
 
-sudo dracut --force --kver 6.8.0-custom \
+Try to add drivers (e.g., to access and load the root fs fromthe ssd)
+```
+sudo dracut --force --kver 5.19.17 \
   --no-hostonly \
   --add-drivers "virtio_blk virtio_pci ahci nvme ext4"
-
+```
 
 
